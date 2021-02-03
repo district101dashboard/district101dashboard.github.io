@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>District 101 Dashboard</title>
+        <link rel='icon' href='https://www.district101.gq/media/d101_small_logo.png'>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                font-family: sans-serif;
+                margin-top: 20;
+                cursor: default;
+            }
+            .student {
+                left: 17;
+                background-image: url('https://lh3.googleusercontent.com/proxy/OgGTkGNXDaoOYTKqbth27PcrGJUnAaxLjpDiTW3m2xlPnVZT3AtXRdqYjwThOzCIhF5orSNqX5BRtsdB2P52BdPu');
+                background-color: lightgray;
+                width: 45%;
+                position: fixed;
+                top: 120;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-position: top;
+                border-top-style: solid;
+                border-color: lightgray;
+                border-width: 51;
+            }
+            .student p {
+                font-family: cursive;
+                text-align: center;
+                font-size: 40px;
+            }
+            .teacher {
+                right: 17;
+                background-image: url('https://lh3.googleusercontent.com/proxy/JRDMMQYcQrEFEF8N4L6eNFu5OSehAdx-MTxUJFAIJsbAuZxTcLg772hWJaOEncecIHgTZU8gfeq0Ob4dSxwhzExW');
+                background-color: lightgray;
+                width: 45%;
+                position: fixed;
+                top: 120;
+                cursor: pointer;
+                background-repeat: no-repeat;
+                background-position: top;
+                border-top-style: solid;
+                border-color: lightgray;
+                border-width: 51;
+            }
+            .teacher p {
+                font-family: cursive;
+                text-align: center;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Who Are You?</h1>
+        <div class='student' onclick="go('student')">
+            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' width='0' height='590'>
+            <p>Student</p>
+        </div>
+        <div class='teacher' onclick='go("teacher")'>
+            <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=' width='0' height='590'>
+            <p>Teacher</p>
+        </div>
+    </body>
+    <script>
+        function go(item) {
+            location.replace(item)
+        }
+    </script>
+</html>
